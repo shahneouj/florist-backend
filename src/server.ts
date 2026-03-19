@@ -8,7 +8,7 @@ import config from "./config";
 async function main() {
     try {
         if (!config.database_url) {
-            throw new Error("Database URL is not provided in environment variables")
+            throw new Error("Database URL is not provided in environment saon")
         }
 
         await mongoose.connect(config.database_url);
